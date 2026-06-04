@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AlzzCyber Pro 9.9 PRO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <h1>ALZZCYBER PRO 9.9 PRO</h1>
+  <p>Premium OSINT Dashboard</p>
+</div>
+
+<div class="container">
+
+  <select id="type">
+    <option value="email">Email Intel</option>
+    <option value="domain">Domain Intel</option>
+    <option value="username">Username Intel</option>
+    <option value="ip">IP Intel</option>
+  </select>
+
+  <input id="input" placeholder="Enter target..." />
+  <button onclick="runScan()">SCAN</button>
+
+  <div class="card">
+    <pre id="output">Waiting scan...</pre>
+  </div>
+
+  <div class="card">
+    <button onclick="exportReport()">EXPORT REPORT</button>
+  </div>
+
+</div>
+
+<script src="lib/utils.js"></script>
+<script src="engine.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
